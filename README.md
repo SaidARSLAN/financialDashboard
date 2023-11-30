@@ -9,7 +9,7 @@
 
 /public : statik dosyaların barındığı alandır.
 
-/scripts : Veritabanı işlemlerinin gerçekleştiği kısım burasıdır.(daha detaylı öğrenilip açıklanılacak!)
+/scripts : Veritabanı işlemlerinin gerçekleştiği kısım burasıdır.
 
 ## Fontlar 
 
@@ -34,3 +34,8 @@ Image import etmek için geleneksel yol yerine <Image /> adlı komponenti kullan
 Sadece page componentleri update olur layout render olmazken.
 
 Bir tane root layout olmak zorunda App klasörünün altında!
+
+
+# Suspense Component
+
+Loadinglerde componentlerin gecikenlerin birbiri ardına gelmesini sağlar!
