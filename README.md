@@ -1,5 +1,13 @@
 ## Next.js App Router Course - Starter
 
-This is the starter template for the Next.js App Router Course. It contains the starting code for the dashboard application.
+## Klasörler
 
-For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
+/app : Bütün routeleri,componentleri ve mantıkları barındıran dosyadır.
+
+/app/lib : data fetching işlemleri ve reusable utilitiesler buradadır.
+
+/app/ui : Bütün UI buradadır. Örneğin kartlar,tablolar ve formlar.
+
+/public : statik dosyaların barındığı alandır.
+
+/scripts : Veritabanı işlemlerinin gerçekleştiği kısım burasıdır.(daha detaylı öğrenilip açıklanılacak!)
