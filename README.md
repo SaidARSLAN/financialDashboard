@@ -27,3 +27,10 @@ export  const lusitana = Lusitana({ subsets: ['latin'], weight:["400","700"]});
 ## Resimler
 
 Image import etmek için geleneksel yol yerine <Image /> adlı komponenti kullanırız.
+Özellikleri next.js ana sayfasında yazmaktadır!
+
+## Layout Oluşturma ve Sayfalar
+
+Sadece page componentleri update olur layout render olmazken.
+
+Bir tane root layout olmak zorunda App klasörünün altında!
