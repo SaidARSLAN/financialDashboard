@@ -79,4 +79,6 @@ Her 0.3 saniyede userin girdiyi bırakıp bırakmadığını kontrol eder.
 
 ## Mutating Data
 
-Server aksiyonları next.js içerisinde cache olayları ile bağlantılıdır!
+Server aksiyonları next.js içerisinde cache olayları ile bağlantılıdır! Yani api ara isteklerini ortadan kaldırır ve direkt server ile iletişime geçer.
+
+Server component'lerin içerisinde bulunan formların action kısmına action fonksiyonları yerleştirilir. Ve gerekli fonksiyonun logici yazılır. Yani server actions bir post isteği oluşturur. Yani ekstradan bir api isteği yazmamıza gerek yoktur.
