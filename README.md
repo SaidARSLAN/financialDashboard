@@ -39,3 +39,40 @@ Bir tane root layout olmak zorunda App klasörünün altında!
 # Suspense Component
 
 Loadinglerde componentlerin gecikenlerin birbiri ardına gelmesini sağlar!
+
+# Adding Search and Pagination
+
+useSearchParams  : Mevcut URL'nin parametrelerine erişir. Örneğin, /dashboard/invoices?page=1&query=pending böyle bir url'nin parametreleri böyle görünür ==> {page: '1', query: 'pending'}
+
+usePathName : Bu hook ile mevcut URL'nin parametrelerini okuruz. Örneğin /dashboard/invoices gibi bir URL'de usePathName kullanırsak return olarak '/dashboard/invoices'
+
+useRouter : Bizi bir başka pageye yönlendirmeyi sağlayan bir hooktur. Örneğin 
+
+const route = useRouter()
+
+route('/main-page')
+
+# Kullanım 
+
+useSearchParams' ı kullanmak için URLSearchParams adlı bir Web API kullanılır. Bu web API URL'nin query parametrelerini manipule etmemizi sağlar.
+
+useRouter hookunun replace metodu ile mevcut url yerine sağlanılan url kısmına navigate ederiz page'i
+
+Örneğin var olan bir url'i paylaşıyoruz ve bu URL'nin otomatik olarak inputa aktarılmasını istiyorsak inputtaki default value özelliğini kullanmamız gerekiyor. Örneğin : 
+
+  defaultValue={searchParams.get('query')?.toString()}
+
+
+## searchParams props && useSearchParams()
+
+Eğer client side tarafında çalışıyorsak useSearchParams, eğer server side tarafında isek searchParams props'unu kullanırız!
+
+# Debouncing 
+
+Search kısmına sürekli keystroke yaptığımızda database kısmına ardı ardına istekler gerçekleştiririz. Bunun önüne geçmek için debouncing kullanılır.
+import { useDebouncedCallback } from 'use-debounce';
+
+const handleSearch = useDebouncedCallback((term) => {
+},300)
+
+Her 0.3 saniyede userin girdiyi bırakıp bırakmadığını kontrol eder.
