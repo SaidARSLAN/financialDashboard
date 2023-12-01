@@ -76,3 +76,7 @@ const handleSearch = useDebouncedCallback((term) => {
 },300)
 
 Her 0.3 saniyede userin girdiyi bırakıp bırakmadığını kontrol eder.
+
+## Mutating Data
+
+Server aksiyonları next.js içerisinde cache olayları ile bağlantılıdır!
